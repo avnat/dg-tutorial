@@ -1,0 +1,15 @@
+<html>
+<form action='/add-post/' method='POST'>{% csrf_token %}
+	Author:<br>
+	<input type="text" name="author"><br>
+	Title:<br>
+	<input type="text" name="title">
+	Text:
+	<input type="text" name="text">
+	Created date:
+    <p>Date: <input name="created_date" size="10" type="text" value="2016-02-07"><br></p>
+    Published date:                 
+    <p>Date: <input name="published_date" size="10" type="text"><br></p>
+    <input type="submit" value="Save" name="_save">
+</form>
+</html>

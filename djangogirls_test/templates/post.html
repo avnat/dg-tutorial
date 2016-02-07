@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<body>
+        <div>
+        	<h2><a href="/posts/{{post.id}}/">{{post.title}}</a></h2>
+            <p>{{post.published_date}}</p>
+            <h4><b>By:</b> {{post.author}}</h4>
+            <p>{{post.text}}</p>
+        </div>
+	</body>
+{% endblock %}
