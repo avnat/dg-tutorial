@@ -7,7 +7,7 @@
 	Text:
 	<input type="text" name="text">
 	Created date:
-    <p>Date: <input name="created_date" size="10" type="text" value="2016-02-07"><br></p>
+    <p>Date: <input name="created_date" size="10" type="text" value="{% now "SHORT_DATETIME_FORMAT"%}"><br></p>
     Published date:                 
     <p>Date: <input name="published_date" size="10" type="text"><br></p>
     <input type="submit" value="Save" name="_save">
